@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoxCard | The Forever Smart Business Card with Chip — by VoxluMedia</title>
+<meta name="description" content="VoxCard is a premium smart business card powered by the Voxlumedia Smart Chip. One tap shares your contact info, socials and website. Update your profile anytime — no reprinting. Black or white card, keychain or wristband.">
+<meta name="keywords" content="smart business card, digital business card, smart business card with chip, reusable business card, modern business card, digital networking card, smart business card keychain">
+<link rel="canonical" href="https://lengkongandreuw.github.io/voxcard/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VoxCard — The Forever Business Card">
+<meta property="og:description" content="One card. One tap. Always up to date. A premium smart business card powered by the Voxlumedia Smart Chip.">
+<meta property="og:url" content="https://lengkongandreuw.github.io/voxcard/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" type="image/png" href="assets/voxcard-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+[{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "VoxCard Smart Business Card",
+  "description": "Premium physical smart business card powered by the Voxlumedia Smart Chip. One tap opens your always-up-to-date digital business profile.",
+  "brand": { "@type": "Brand", "name": "VoxCard by VoxluMedia" },
+  "color": "Premium Black, Classic White",
+  "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "39.99", "availability": "https://schema.org/InStock" }
+},
+{ "@context":"https://schema.org","@type":"Product","name":"VoxCard Smart Keychain","brand":{"@type":"Brand","name":"VoxCard by VoxluMedia"},"offers":{"@type":"Offer","priceCurrency":"USD","price":"39.99"} },
+{ "@context":"https://schema.org","@type":"Product","name":"VoxCard Smart Wristband","brand":{"@type":"Brand","name":"VoxCard by VoxluMedia"},"offers":{"@type":"Offer","priceCurrency":"USD","price":"39.99"} }
+]
+</script>
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo"><img src="assets/voxcard-icon.png" alt="VoxCard"><span>VOXCARD<small>by VoxluMedia</small></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#how">How it works</a>
+      <a href="#chip">Smart Chip</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#shop" class="btn sm nav-shop" id="navShop">Shop VoxCard</a>
+      <button class="cart-btn" id="cartOpen" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cart-count" id="cartCount" data-n="0">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="banner" id="orderBanner" role="status">
+  <button type="button" id="dismissOrderBanner" aria-label="Dismiss">×</button>
+  <b>Thank you — your order is confirmed.</b>
+  <p>A receipt is on its way to your email. Next, you'll set up your VoxCard profile so your card is ready the moment it arrives.</p>
+</div>
+
+<main id="top">
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">VoxCard — The Forever Business Card</span>
+      <h1>Meet the <span class="gold">Forever</span> Business Card.</h1>
+      <p class="sub">Your business card is finally as dynamic as your business. Tap to share your contact information, social profiles, website, and more. Update your profile anytime. Your VoxCard always stays current.</p>
+      <ul class="checks">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>One tap to share your professional identity.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Your digital information, always up to date.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>No more printing new business cards.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>No app required for the person receiving your card.</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Designed for modern professionals.</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#shop" class="btn">Shop VoxCard
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a href="#how" class="btn ghost">See how it works</a>
+      </div>
+      <div class="trust"><span>One-time purchase</span><span>No subscription</span><span>Free US shipping on cards</span></div>
+    </div>
+
+    <div class="stage reveal" aria-label="A phone tapping a VoxCard to open a digital profile">
+      <div class="vcard c1"><img class="photo" src="assets/card-black.webp" alt="VoxCard Smart Business Card in Premium Black"></div>
+      <div class="vcard white c2" aria-label="VoxCard Smart Business Card in Classic White">
+        <div class="top"><span>VOXCARD</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19.5h.01M8.5 16a5 5 0 0 1 7 0M5 12.5a10 10 0 0 1 14 0"/></svg></div>
+        <img class="mark" src="assets/voxcard-mark.webp" alt="">
+        <div class="word">VOXLUMEDIA™</div>
+        <div class="url">www.voxcard.voxlumedia.com</div>
+      </div>
+      <span class="ripple"></span><span class="ripple r2"></span>
+      <div class="phone"><div class="screen">
+        <div class="idle">Tap a VoxCard</div>
+        <div class="profile">
+          <div class="av">AM</div>
+          <div class="nm">Alex Morgan</div>
+          <div class="tt">Realtor · Morgan Realty</div>
+          <div class="row"><i></i>Call</div>
+          <div class="row"><i></i>Email</div>
+          <div class="row"><i></i>Website</div>
+          <div class="row"><i></i>Instagram</div>
+          <div class="save">SAVE CONTACT</div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5-SECOND STRIP ========== -->
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item"><div class="strip-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/></svg></div><div><b>A physical smart card</b><span>Premium card you hand over or tap</span></div></div>
+    <div class="strip-item"><div class="strip-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div><div><b>Voxlumedia Smart Chip</b><span>Connects your card to your profile</span></div></div>
+    <div class="strip-item"><div class="strip-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div><div><b>Update anytime</b><span>Your card keeps showing the latest</span></div></div>
+    <div class="strip-item"><div class="strip-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div><div><b>Buy it here</b><span>Black, white, keychain or wristband</span></div></div>
+  </div>
+</div>
+
+<!-- ========== SHOP ========== -->
+<section class="light-2" id="shop">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow eyebrow-deep">The collection</span>
+      <h2 class="big section-title">One Smart Chip.<br>Three ways to connect.</h2>
+    </div>
+
+    <!-- Flagship -->
+    <div class="flagship reveal" id="product-card">
+      <div class="flag-visual" id="flagVisual">
+        <span class="badge">Flagship</span>
+        <div class="vcard" id="flagBlack"><img class="photo" src="assets/card-black.webp" alt="VoxCard Smart Business Card — Premium Black"></div>
+        <div class="vcard white hide" id="flagWhite" aria-label="VoxCard Smart Business Card — Classic White">
+          <div class="top"><span>VOXCARD</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19.5h.01M8.5 16a5 5 0 0 1 7 0M5 12.5a10 10 0 0 1 14 0"/></svg></div>
+          <img class="mark" src="assets/voxcard-mark.webp" alt="">
+          <div class="word">VOXLUMEDIA™</div>
+          <div class="url">www.voxcard.voxlumedia.com</div>
+        </div>
+      </div>
+      <div class="flag-info">
+        <span class="eyebrow eyebrow-deep">Product 01</span>
+        <h3>VoxCard Smart Business Card</h3>
+        <div class="price-line"><span class="price" data-price="card-black">$39.99</span><span class="price-note">One-time purchase · No subscription</span></div>
+        <p class="desc">Make every introduction count. The VoxCard Smart Business Card gives you a smarter way to introduce yourself, share your business, and build meaningful connections. One simple tap opens your personalized digital business card, giving people instant access to your contact details, social media, website, and more.</p>
+        <ul class="checks">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Premium physical business card</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Powered by the Voxlumedia Smart Chip</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Instantly shares your digital profile with compatible smartphones</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>No app required for recipients</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Update your information anytime — reusable as your business evolves</li>
+        </ul>
+        <div class="opt-label">Color: <b id="colorName">Premium Black</b></div>
+        <div class="swatches" role="group" aria-label="Card color">
+          <button class="swatch" data-color="black" aria-pressed="true"><span class="dot"></span>Premium Black</button>
+          <button class="swatch" data-color="white" aria-pressed="false"><span class="dot"></span>Classic White</button>
+        </div>
+        <div class="buy-row">
+          <div class="qty"><button type="button" data-q="-1" aria-label="Decrease quantity">−</button><input id="flagQty" type="number" min="1" max="50" value="1" aria-label="Quantity"><button type="button" data-q="1" aria-label="Increase quantity">+</button></div>
+          <button class="btn dark" id="flagAdd">Get your VoxCard</button>
+        </div>
+        <div class="ship-note"><span>Free US shipping</span><span>Ships in 5–7 business days</span><span>Set up your profile after purchase</span></div>
+      </div>
+    </div>
+
+    <!-- Accessories -->
+    <div class="acc-grid">
+      <article class="acc reveal" id="product-keychain">
+        <div class="acc-visual">
+          <!-- REPLACE: swap this illustration for real Smart Keychain product photography -->
+          <svg class="fob" viewBox="0 -48 200 300" role="img" aria-label="VoxCard Smart Keychain"><defs><linearGradient id="fg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2b30"/><stop offset="1" stop-color="#0a0a0b"/></linearGradient><radialGradient id="ff1" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#232327"/><stop offset="1" stop-color="#0d0d0f"/></radialGradient><mask id="fm1"><rect x="-10" y="-60" width="220" height="330" fill="#fff"/><rect x="72" y="26" width="56" height="22" rx="11" fill="#000"/></mask></defs><circle cx="100" cy="2" r="44" fill="none" stroke="#c7c7cd" stroke-width="5"/><circle cx="100" cy="2" r="44" fill="none" stroke="#7d7d84" stroke-width="1.2"/><path mask="url(#fm1)" d="M100 6C134 6 152 40 168 84C186 128 192 150 192 168A92 92 0 0 1 8 168C8 150 14 128 32 84C48 40 66 6 100 6Z" fill="url(#fg1)" stroke="#3a3a40" stroke-width="1.5"/><path d="M58 70l8 10M142 70l-8 10" stroke="#050506" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="170" r="70" fill="url(#ff1)" stroke="#2f2f35" stroke-width="2"/><circle cx="100" cy="170" r="60" fill="none" stroke="#c9b48a" stroke-opacity=".35" stroke-width="1"/><image href="assets/voxcard-mark.webp" x="64" y="138" width="72" height="64"/></svg>
+          <span class="illus-note">Product render</span>
+        </div>
+        <div class="acc-body">
+          <span class="eyebrow">Product 02</span>
+          <h3>VoxCard Smart Keychain</h3>
+          <h4>Your business identity, always within reach.</h4>
+          <p>Take your professional identity everywhere. The VoxCard Smart Keychain puts the power of your digital business card right on your keys. Perfect for networking, meetings, events, and everyday introductions.</p>
+          <ul class="checks">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Compact and portable</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Powered by the Voxlumedia Smart Chip</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Share your digital profile with a tap</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>No need to carry traditional business cards</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Update your profile anytime</li>
+          </ul>
+          <div data-buy="keychain"></div>
+        </div>
+      </article>
+
+      <article class="acc reveal" id="product-wristband">
+        <div class="acc-visual">
+          <!-- REPLACE: swap this illustration for real Smart Wristband product photography -->
+          <svg class="band" viewBox="0 0 300 220" role="img" aria-label="VoxCard Smart Wristband"><ellipse cx="150" cy="100" rx="122" ry="72" fill="none" stroke="#18181b" stroke-width="22"/><ellipse cx="150" cy="100" rx="133" ry="83" fill="none" stroke="#34343a" stroke-width="1"/><ellipse cx="150" cy="100" rx="111" ry="61" fill="none" stroke="#2a2a2f" stroke-width="1"/><g fill="#020203"><circle cx="238" cy="52" r="3.2"/><circle cx="253" cy="64" r="3.2"/><circle cx="263" cy="78" r="3.2"/><circle cx="269" cy="93" r="3.2"/><circle cx="270" cy="108" r="3.2"/></g><circle cx="80" cy="47" r="5" fill="#9a9aa0"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#2a2a2f" stroke-width="26"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#45454c" stroke-width="1.5" transform="translate(0,-12)"/><ellipse cx="150" cy="170" rx="54" ry="20" fill="#232327" stroke="#c9b48a" stroke-opacity=".5"/><image href="assets/voxcard-mark.webp" x="132" y="155" width="36" height="31"/></svg>
+          <span class="illus-note">Product render</span>
+        </div>
+        <div class="acc-body">
+          <span class="eyebrow">Product 03</span>
+          <h3>VoxCard Smart Wristband</h3>
+          <h4>Wear your connection.</h4>
+          <p>Make networking effortless. With the VoxCard Smart Wristband, your professional identity is always just a tap away — a convenient, modern way to share your information at events, conferences, meetings, and on the go.</p>
+          <ul class="checks">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Wearable smart business identity</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Powered by the Voxlumedia Smart Chip</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Quick profile sharing</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Convenient hands-free carrying</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Adjustable soft band — one size fits most (5.9–8.3 in wrists)</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Always connected to your latest profile</li>
+          </ul>
+          <div data-buy="wristband"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SMART CHIP ========== -->
+<section id="chip">
+  <div class="wrap chip-grid">
+    <div class="chip-art reveal" aria-hidden="true">
+      <span class="wave"></span><span class="wave"></span><span class="wave"></span>
+      <div class="chip"></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">The technology</span>
+      <h2 class="big section-title">Powered by the Voxlumedia Smart Chip.</h2>
+      <p class="lead section-lead"><b>Small chip. Big possibilities.</b> Every VoxCard is powered by the Voxlumedia Smart Chip, connecting your physical product to your personalized digital identity.</p>
+      <div class="chip-points">
+        <div class="chip-pt"><span class="n">01</span><div><b>Bring a phone close</b><span>A compatible smartphone held near your VoxCard opens your digital profile — instantly.</span></div></div>
+        <div class="chip-pt"><span class="n">02</span><div><b>Your profile lives online</b><span>The chip points to your live VoxCard profile. Edit your profile, and everyone who taps sees the new version.</span></div></div>
+        <div class="chip-pt"><span class="n">03</span><div><b>Nothing to install</b><span>The person receiving your card doesn't need an app. Your profile opens right in their browser.</span></div></div>
+      </div>
+      <p class="quote">The magic isn't just sharing your information. It's knowing your information can evolve without replacing your physical card.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOREVER ========== -->
+<section class="forever" id="forever">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow eyebrow-deep">One card for life's changes</span>
+      <h2 class="big section-title">Your business changes.<br>Your card keeps up.</h2>
+      <p class="lead section-lead">Think about how many times you've ordered new business cards because your phone number, email, website, company, or job title changed. With VoxCard, those days are over. Your physical card connects to your digital profile — whenever you update your profile, the changes appear the next time someone opens your VoxCard. <b>Your card stays the same. Your information evolves.</b></p>
+    </div>
+    <div class="ba">
+      <div class="ba-col ba-before reveal">
+        <h3>Before — paper cards</h3>
+        <div class="paper-stack" aria-hidden="true">
+          <div class="paper"><b>J. Rivera</b>Sales Associate<br><s>(571) 555-0142</s></div>
+          <div class="paper"><b>J. Rivera</b><s>Sales Associate</s><br><s>jr@oldcompany.com</s></div>
+          <div class="paper"><b>J. Rivera</b>Sales Manager<br><s>oldcompany.com</s></div>
+        </div>
+        <ul class="ba-list">
+          <li>Boxes of old printed cards</li>
+          <li>Outdated phone numbers</li>
+          <li>Old email addresses</li>
+          <li>Reprinting expenses — again and again</li>
+          <li>Throwing away unused cards</li>
+        </ul>
+      </div>
+      <div class="ba-arrow reveal" aria-hidden="true">→</div>
+      <div class="ba-col ba-after reveal">
+        <h3>After — one VoxCard</h3>
+        <div class="one-card">
+          <div class="vcard"><img class="photo" src="assets/card-black.webp" alt=""></div>
+          <div class="update-pill">Profile updated:<br><em>Sales Manager · new number</em> ✓</div>
+        </div>
+        <ul class="ba-list">
+          <li>One VoxCard</li>
+          <li>Updates show up in your digital profile instantly</li>
+          <li>No need to reorder because your details changed</li>
+          <li>A single physical product that keeps working as your business evolves</li>
+        </ul>
+      </div>
+    </div>
+    <p class="slogan reveal">Buy it once. <span>Keep it current.</span></p>
+    <div class="center reveal section-action"><a href="#shop" class="btn dark">Get your Forever Business Card</a></div>
+  </div>
+</section>
+
+<!-- ========== PROFILE ========== -->
+<section id="profile">
+  <div class="wrap prof-grid">
+    <div class="reveal">
+      <div class="big-phone"><div class="profile">
+        <div class="av">AM</div>
+        <div class="nm">Alex Morgan</div>
+        <div class="tt">Realtor · Morgan Realty</div>
+        <div class="row"><i></i>(555) 010-2030</div>
+        <div class="row"><i></i>alex@morganrealty.com</div>
+        <div class="row"><i></i>morganrealty.com</div>
+        <div class="row"><i></i>Instagram · LinkedIn</div>
+        <div class="row"><i></i>Book a showing</div>
+        <div class="save">SAVE CONTACT</div>
+      </div></div>
+      <p class="sample-tag">Sample profile for illustration · <a href="https://voxcard.voxlumedia.com/u/jg-YUzv" target="_blank" rel="noopener" class="gold-link">see a live VoxCard profile</a></p>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">What people see when they tap</span>
+      <h2 class="big section-title">More than a business card. Your entire business in one tap.</h2>
+      <p class="lead section-lead">Instead of handing someone a piece of paper with limited information, give them access to your complete professional identity.</p>
+      <!-- Only features confirmed in the current VoxCard profile are listed. Add more (WhatsApp, logo, portfolio) once live. -->
+      <div class="caps">
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Name, title &amp; profile photo</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.8-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Phone &amp; email</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Website &amp; links</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Social media profiles</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 21h16"/></svg>One-tap save to contacts</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 20h1M17 20h1M20 17h1"/></svg>QR code sharing</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Booking page link</div>
+        <div class="cap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Unlimited updates</div>
+      </div>
+      <a href="#shop" class="btn">Choose your VoxCard</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="light-2" id="how">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow eyebrow-deep">How it works</span>
+      <h2 class="big section-title">Three steps to a smarter introduction.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3>Choose your VoxCard</h3><p>Select your preferred product and style. Choose a black or white business card, or explore the smart keychain and wristband.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Personalize your profile</h3><p>After purchasing, follow the onboarding process to create your digital business identity and add your professional information.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Tap. Share. Connect.</h3><p>Use your VoxCard to share your information with compatible smartphones. Update your profile whenever you need to — your card keeps pointing to your latest information.</p></div>
+    </div>
+    <div class="center reveal section-action"><a href="#shop" class="btn dark">Choose your VoxCard</a></div>
+  </div>
+</section>
+
+<!-- ========== PRICING ========== -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="big section-title">Pay once. Keep it current.</h2>
+      <p class="lead section-lead">Every VoxCard product is $39.99 and includes access to your digital profile. No subscriptions, no recurring charges.</p>
+    </div>
+    <div class="p-grid">
+      <div class="p-card feat reveal">
+        <div class="p-thumb"><div class="vcard"><img class="photo" src="assets/card-black.webp" alt="Premium Black VoxCard"></div></div>
+        <div class="p-body"><h3>Smart Business Card</h3><div class="var">Premium Black</div>
+          <div data-pricebox="card-black"></div>
+          <ul><li>Voxlumedia Smart Chip</li><li>Digital profile included</li><li>Free US shipping</li><li>Ships in 5–7 business days</li></ul>
+          <div data-buy="card-black" data-compact></div></div>
+      </div>
+      <div class="p-card feat reveal">
+        <div class="p-thumb lightbg"><div class="vcard white"><div class="top"><span>VOXCARD</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19.5h.01M8.5 16a5 5 0 0 1 7 0M5 12.5a10 10 0 0 1 14 0"/></svg></div><img class="mark" src="assets/voxcard-mark.webp" alt=""><div class="word">VOXLUMEDIA™</div><div class="url">www.voxcard.voxlumedia.com</div></div></div>
+        <div class="p-body"><h3>Smart Business Card</h3><div class="var">Classic White</div>
+          <div data-pricebox="card-white"></div>
+          <ul><li>Voxlumedia Smart Chip</li><li>Digital profile included</li><li>Free US shipping</li><li>Ships in 5–7 business days</li></ul>
+          <div data-buy="card-white" data-compact></div></div>
+      </div>
+      <div class="p-card reveal">
+        <div class="p-thumb"><svg class="fob" viewBox="0 -48 200 300" role="img" aria-label="VoxCard Smart Keychain"><defs><linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2b30"/><stop offset="1" stop-color="#0a0a0b"/></linearGradient><radialGradient id="ff2" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#232327"/><stop offset="1" stop-color="#0d0d0f"/></radialGradient><mask id="fm2"><rect x="-10" y="-60" width="220" height="330" fill="#fff"/><rect x="72" y="26" width="56" height="22" rx="11" fill="#000"/></mask></defs><circle cx="100" cy="2" r="44" fill="none" stroke="#c7c7cd" stroke-width="5"/><circle cx="100" cy="2" r="44" fill="none" stroke="#7d7d84" stroke-width="1.2"/><path mask="url(#fm2)" d="M100 6C134 6 152 40 168 84C186 128 192 150 192 168A92 92 0 0 1 8 168C8 150 14 128 32 84C48 40 66 6 100 6Z" fill="url(#fg2)" stroke="#3a3a40" stroke-width="1.5"/><path d="M58 70l8 10M142 70l-8 10" stroke="#050506" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="170" r="70" fill="url(#ff2)" stroke="#2f2f35" stroke-width="2"/><circle cx="100" cy="170" r="60" fill="none" stroke="#c9b48a" stroke-opacity=".35" stroke-width="1"/><image href="assets/voxcard-mark.webp" x="64" y="138" width="72" height="64"/></svg></div>
+        <div class="p-body"><h3>Smart Keychain</h3><div class="var">Black</div>
+          <div data-pricebox="keychain"></div>
+          <ul><li>Voxlumedia Smart Chip</li><li>Digital profile included</li><li>Fits on your keys</li><li>Durable teardrop fob</li></ul>
+          <div data-buy="keychain" data-compact></div></div>
+      </div>
+      <div class="p-card reveal">
+        <div class="p-thumb"><svg class="band" viewBox="0 0 300 220" role="img" aria-label="VoxCard Smart Wristband"><ellipse cx="150" cy="100" rx="122" ry="72" fill="none" stroke="#18181b" stroke-width="22"/><ellipse cx="150" cy="100" rx="133" ry="83" fill="none" stroke="#34343a" stroke-width="1"/><ellipse cx="150" cy="100" rx="111" ry="61" fill="none" stroke="#2a2a2f" stroke-width="1"/><g fill="#020203"><circle cx="238" cy="52" r="3.2"/><circle cx="253" cy="64" r="3.2"/><circle cx="263" cy="78" r="3.2"/><circle cx="269" cy="93" r="3.2"/><circle cx="270" cy="108" r="3.2"/></g><circle cx="80" cy="47" r="5" fill="#9a9aa0"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#2a2a2f" stroke-width="26"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#45454c" stroke-width="1.5" transform="translate(0,-12)"/><ellipse cx="150" cy="170" rx="54" ry="20" fill="#232327" stroke="#c9b48a" stroke-opacity=".5"/><image href="assets/voxcard-mark.webp" x="132" y="155" width="36" height="31"/></svg></div>
+        <div class="p-body"><h3>Smart Wristband</h3><div class="var">Black</div>
+          <div data-pricebox="wristband"></div>
+          <ul><li>Voxlumedia Smart Chip</li><li>Digital profile included</li><li>Wearable, hands-free</li><li>Adjustable — fits 5.9–8.3 in wrists</li></ul>
+          <div data-buy="wristband" data-compact></div></div>
+      </div>
+    </div>
+    <p class="no-tricks reveal">Prices shown are the full price. No hidden fees, no subscription. Ordering for a team of 10+? <a href="mailto:sales@voxlumedia.com?subject=VoxCard%20team%20order" class="gold-link">Contact sales</a>.</p>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="light" id="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow eyebrow-deep">FAQ</span>
+      <h2 class="big section-title">Questions? Answered.</h2>
+    </div>
+    <!-- Answers reflect current VoxCard policies. Items marked CONFIRM should be checked before launch. -->
+    <div class="faq reveal">
+      <details><summary>What is VoxCard?</summary><p>VoxCard is a premium physical smart business card by VoxluMedia. It's powered by the Voxlumedia Smart Chip, which connects your card to a personalized digital profile — your contact details, social profiles, website, booking link and more — that people open with a single tap.</p></details>
+      <details><summary>What makes VoxCard different from traditional business cards?</summary><p>A paper card is out of date the moment your details change. Your VoxCard connects to a living digital profile, so when you update your phone number, title, or website, people see the new information the next time they tap. No reprinting, no boxes of outdated cards.</p></details>
+      <details><summary>What is the Voxlumedia Smart Chip?</summary><p>It's the small chip built into every VoxCard product. It connects your physical card, keychain, or wristband to your personalized online profile. The chip itself doesn't store your details — it points to your live profile, which is why your updates show up without replacing the card.</p></details>
+      <details><summary>How does the tap-to-share feature work?</summary><p>The other person holds their compatible smartphone close to your VoxCard. Their phone shows a prompt, and your profile opens in their browser. From there they can call, email, visit your links, or save you straight to their contacts. You can also share your profile through its QR code or link.</p></details>
+      <details><summary>Do recipients need to download an app?</summary><p>No. Your profile opens directly in their phone's web browser. Nobody needs to install anything — not you, and not the people you meet.</p></details>
+      <details><summary>Can I update my information after purchasing?</summary><p>Yes, as often as you like. Edit your profile from your VoxCard dashboard and the changes appear the next time someone opens your card.</p></details>
+      <details><summary>Will I need to buy another card if my phone number or job changes?</summary><p>No. That's the whole point. Update your profile and keep using the same VoxCard.</p></details>
+      <details><summary>What's the difference between the card, keychain, and wristband?</summary><p>All three use the same Voxlumedia Smart Chip and connect to your VoxCard profile. The difference is how you carry it: the card fits in your wallet and hands over like a classic business card, the keychain lives on your keys, and the wristband is worn for hands-free networking at events.</p></details>
+      <details><summary>Are black and white cards available?</summary><p>Yes. The VoxCard Smart Business Card comes in Premium Black and Classic White. Choose your color when you add the card to your cart.</p></details>
+      <!-- CONFIRM: replace with your verified compatibility list -->
+      <details><summary>Which smartphones are compatible?</summary><p>Tap-to-share works with smartphones that support contactless tag reading, which includes most recent iPhone and Android models. On some Android phones this setting needs to be switched on. Any phone with a camera can still open your profile through your QR code, and anyone can open your profile link.</p></details>
+      <details><summary>How do I activate and personalize my VoxCard?</summary><p>After your purchase, you'll follow a short onboarding process to create your VoxCard profile — add your photo, contact details, social links, and website — and connect it to your card. Once that's done, your card is ready to tap.</p></details>
+      <details><summary>How long does shipping take?</summary><p>VoxCard Smart Business Cards ship free within the US and arrive in 5–7 business days. Shipping details for the keychain and wristband are shown at checkout.</p></details>
+      <!-- CONFIRM: replacement / deactivation policy -->
+      <details><summary>What happens if I lose my card?</summary><p>Your information lives in your online VoxCard profile, not on the card, so nothing is lost. Contact us at <a href="mailto:sales@voxlumedia.com" class="underlined-link">sales@voxlumedia.com</a> and we'll help you get a replacement connected to your profile.</p></details>
+      <details><summary>Is there a recurring subscription?</summary><p>No. VoxCard is a one-time purchase. The price you see is what you pay — your digital profile access is included with your product.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<section class="final">
+  <div class="wrap reveal">
+    <span class="eyebrow">VoxCard by VoxluMedia</span>
+    <h2>Stop reprinting.<br><span class="gold">Start connecting.</span></h2>
+    <p class="lead">Your business deserves more than an ordinary business card. Make every introduction count with VoxCard — the forever business card powered by the Voxlumedia Smart Chip.</p>
+    <a href="#shop" class="btn">Get your VoxCard today</a>
+    <div class="lineup">
+      <figure><div class="vcard"><img class="photo" src="assets/card-black.webp" alt="Black VoxCard"></div><figcaption>Black card</figcaption></figure>
+      <figure><div class="vcard white"><div class="top"><span>VOXCARD</span></div><img class="mark" src="assets/voxcard-mark.webp" alt=""><div class="word">VOXLUMEDIA™</div><div class="url">www.voxcard.voxlumedia.com</div></div><figcaption>White card</figcaption></figure>
+      <figure><svg class="fob" viewBox="0 -48 200 300" role="img" aria-label="VoxCard Smart Keychain"><defs><linearGradient id="fg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2b30"/><stop offset="1" stop-color="#0a0a0b"/></linearGradient><radialGradient id="ff3" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#232327"/><stop offset="1" stop-color="#0d0d0f"/></radialGradient><mask id="fm3"><rect x="-10" y="-60" width="220" height="330" fill="#fff"/><rect x="72" y="26" width="56" height="22" rx="11" fill="#000"/></mask></defs><circle cx="100" cy="2" r="44" fill="none" stroke="#c7c7cd" stroke-width="5"/><circle cx="100" cy="2" r="44" fill="none" stroke="#7d7d84" stroke-width="1.2"/><path mask="url(#fm3)" d="M100 6C134 6 152 40 168 84C186 128 192 150 192 168A92 92 0 0 1 8 168C8 150 14 128 32 84C48 40 66 6 100 6Z" fill="url(#fg3)" stroke="#3a3a40" stroke-width="1.5"/><path d="M58 70l8 10M142 70l-8 10" stroke="#050506" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="170" r="70" fill="url(#ff3)" stroke="#2f2f35" stroke-width="2"/><circle cx="100" cy="170" r="60" fill="none" stroke="#c9b48a" stroke-opacity=".35" stroke-width="1"/><image href="assets/voxcard-mark.webp" x="64" y="138" width="72" height="64"/></svg><figcaption>Keychain</figcaption></figure>
+      <figure><svg class="band" viewBox="0 0 300 220" role="img" aria-label="VoxCard Smart Wristband"><ellipse cx="150" cy="100" rx="122" ry="72" fill="none" stroke="#18181b" stroke-width="22"/><ellipse cx="150" cy="100" rx="133" ry="83" fill="none" stroke="#34343a" stroke-width="1"/><ellipse cx="150" cy="100" rx="111" ry="61" fill="none" stroke="#2a2a2f" stroke-width="1"/><g fill="#020203"><circle cx="238" cy="52" r="3.2"/><circle cx="253" cy="64" r="3.2"/><circle cx="263" cy="78" r="3.2"/><circle cx="269" cy="93" r="3.2"/><circle cx="270" cy="108" r="3.2"/></g><circle cx="80" cy="47" r="5" fill="#9a9aa0"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#2a2a2f" stroke-width="26"/><path d="M28 100A122 72 0 0 0 272 100" fill="none" stroke="#45454c" stroke-width="1.5" transform="translate(0,-12)"/><ellipse cx="150" cy="170" rx="54" ry="20" fill="#232327" stroke="#c9b48a" stroke-opacity=".5"/><image href="assets/voxcard-mark.webp" x="132" y="155" width="36" height="31"/></svg><figcaption>Wristband</figcaption></figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="logo"><img src="assets/voxcard-icon.png" alt="VoxCard"><span>VOXCARD<small>by VoxluMedia</small></span></a>
+        <p class="footer-description">Premium smart business cards powered by the Voxlumedia Smart Chip.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#shop">Shop</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+        <a href="mailto:sales@voxlumedia.com">sales@voxlumedia.com</a>
+        <a href="tel:+15715260060">(571) 526-0060</a>
+        <a href="https://voxlumedia.com" target="_blank" rel="noopener">voxlumedia.com</a>
+      </div>
+    </div>
+    <p class="tagline-final">VoxCard — The Forever Business Card · One card. One tap. Always up to date. · © <span id="yr"></span> Voxlumedia, LLC</p>
+  </div>
+</footer>
+
+<!-- ========== CART ========== -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="d-head"><h3>Your cart</h3><button class="d-close" id="cartClose" aria-label="Close cart">×</button></div>
+  <div class="d-items" id="dItems"></div>
+  <div class="d-foot" id="dFoot"></div>
+</aside>
+
+<div class="sticky" id="sticky">
+  <div><b>VoxCard Smart Business Card</b><small>$39.99 · One-time · Free US shipping</small></div>
+  <a href="#shop" class="btn sm">Shop VoxCard</a>
+</div>
+<div class="toast" id="toast"></div>
+
+</body>
+</html>
