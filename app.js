@@ -13,14 +13,12 @@ var STORE = {
   orderEmail: 'sales@voxlumedia.com',
   successParam: 'order=success',   // set your processor's success URL to  ...?order=success
   products: {
-    'card-black': { name: 'VoxCard Smart Business Card', variant: 'Premium Black', price: 39.99, paymentLink: '', thumb: 'k' },
-    'card-white': { name: 'VoxCard Smart Business Card', variant: 'Classic White', price: 39.99, paymentLink: '', thumb: 'w' },
-    'keychain':   { name: 'VoxCard Smart Keychain',      variant: 'Black',         price: 39.99,  paymentLink: '', thumb: 'k' },
-    'wristband':  { name: 'VoxCard Smart Wristband',     variant: 'Black',         price: 39.99,  paymentLink: '', thumb: 'k' }
+    'card-black': { name: 'VoxCard Smart Business Card', variant: 'Premium Black', price: 39.99, paymentLink: '', image: 'voxcard-premium-black.png', imageClass: 'vcard black' },
+    'card-white': { name: 'VoxCard Smart Business Card', variant: 'Classic White', price: 39.99, paymentLink: '', image: 'voxcard-classic-white.png', imageClass: 'vcard white' },
+    'keychain':   { name: 'VoxCard Smart Keychain',      variant: 'Black',         price: 39.99,  paymentLink: '', image: 'voxcard-keychain-dua-sudut.png', imageClass: 'product-image keychain front' },
+    'wristband':  { name: 'VoxCard Smart Wristband',     variant: 'Black',         price: 39.99,  paymentLink: '', image: 'voxcard-wristband-dua-tampilan.png', imageClass: 'product-image wristband closed' }
   }
 };
-var CARD_IMG = document.querySelector('#flagBlack img').src;
-var LOGO_IMG = document.querySelector('#flagWhite .mark').src;
 
 (function(){
   var $ = function(s,r){return (r||document).querySelector(s)}, $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
@@ -77,9 +75,11 @@ var LOGO_IMG = document.querySelector('#flagWhite .mark').src;
   $('#cartOpen').addEventListener('click', openCart); $('#cartClose').addEventListener('click', closeCart); scrim.addEventListener('click', closeCart);
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeCart(); });
 
-  function thumb(id){ var p=STORE.products[id];
-    if(id==='card-black') return '<div class="d-thumb k"><img src="'+CARD_IMG+'" alt=""></div>';
-    return '<div class="d-thumb '+p.thumb+'"><img class="mini" src="'+LOGO_IMG+'" alt=""></div>'; }
+  function thumb(id){
+    var product = STORE.products[id];
+    var background = id === 'card-white' ? 'w' : 'k';
+    return '<div class="d-thumb '+background+'"><div class="'+product.imageClass+'"><img src="assets/'+product.image+'" alt=""></div></div>';
+  }
 
   function render(){
     var ids=Object.keys(cart), n=0, sub=0;
